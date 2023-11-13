@@ -1,0 +1,5 @@
+.DS_Store
+section2.2/node_modules
+section3.1/node_modules
+node_modules/**
+section5.4/node_modules

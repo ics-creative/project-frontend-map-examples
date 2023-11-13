@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="content"><!-- ここにスクリプトによって文字列が代入される --></div>
+    <script type="module">
+      import { format } from "https://cdn.skypack.dev/date-fns";
+      const label = format(new Date(), "今日はyyyy年MM月dd日です。");
+      console.log(label); // 実行結果： "今日は2023年07月11日です。"
+      // 要素に文字列を代入
+      document.querySelector("#content").textContent = label;
+    </script>
+  </body>
+</html>

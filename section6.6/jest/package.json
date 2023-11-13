@@ -1,0 +1,11 @@
+{
+  "name": "06-07-jest",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest"
+  },
+  "devDependencies": {
+    "jest": "^29.6.1"
+  },
+  "type": "module"
+}

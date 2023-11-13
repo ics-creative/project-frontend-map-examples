@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja" style="background: #f3f3f3;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DOM Based XSS</title>
+</head>
+<body>
+  <p class="welcome">こんにちは！</p>
+  <script>
+    const name = decodeURIComponent(location.search.split('name=')[1])
+    document.write(`${name}さん`)
+  </script>
+</body>
+</html>

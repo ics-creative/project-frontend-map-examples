@@ -1,0 +1,10 @@
+{
+  "name": "06-04",
+  "version": "1.0.0",
+  "dependencies": {
+    "prettier": "^3.0.0"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.html\""
+  }
+}

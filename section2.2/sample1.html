@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script type="module">
+      import { format } from "https://cdn.skypack.dev/date-fns";
+      const label = format(new Date(), "今日はyyyy年MM月dd日です。"); // 実行結果："今日は2023年07月11日です。"
+      console.log(label);
+    </script>
+  </body>
+</html>

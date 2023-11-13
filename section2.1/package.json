@@ -1,0 +1,11 @@
+{
+  "name": "hello-world",
+  "version": "0.0.0",
+  "type": "module",
+  "dependencies": {
+    "marked": "^5.1.2"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}

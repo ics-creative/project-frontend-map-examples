@@ -1,0 +1,48 @@
+body {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template:
+    "_1 _1" auto
+    "_2 _3" 1fr
+    "_4 _4" auto /
+    1fr 300px;
+
+  /* 縦に小さい画面でフッターを画面下に配置するテクニック */
+  min-height: 100vh;
+}
+
+header { grid-area: _1; }
+main { grid-area: _2; }
+aside { grid-area: _3; }
+footer { grid-area: _4; }
+
+/* ヘッダー部分 */
+header {
+  background-color: #eee; /* 灰色 */
+  text-align: center; /* 中央寄せ */
+  padding: 16px; /* 余白 */
+}
+
+/* メイン部分 */
+main {
+  padding: 32px;
+}
+
+main img {
+  width: 100%;
+  height: auto;
+}
+
+/* 右サイド部分 */
+aside {
+  background-color: lightgray;
+  padding: 16px 32px;/* 余白 */
+}
+
+/* フッター部分 */
+footer {
+  background-color: #eee; /* 灰色 */
+  text-align: center; /* 中央寄せ */
+  padding: 16px;/* 余白 */
+}

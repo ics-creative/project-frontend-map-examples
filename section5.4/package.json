@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "typeCheck1": "tsc typescript1.ts --noEmit",
+    "typeCheck2": "tsc typescript2.ts --noEmit"
+  }
+}

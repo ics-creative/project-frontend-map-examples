@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      button {
+        font-size: 1.5rem;
+      }
+    </style>
+    <script>
+      window.addEventListener("DOMContentLoaded", () => {
+        const button = document.getElementById("button");
+        const log = document.getElementById("log");
+        let count = 0;
+        button.addEventListener("click", () => {
+          count++;
+          log.textContent = count;
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <p id="log"></p>
+      <button id="button">+1</button>
+    </div>
+  </body>
+</html>
